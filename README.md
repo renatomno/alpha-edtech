@@ -1,3 +1,1 @@
-Exercício proposto na primeira aula do módulo 2: Hyper Text Markup Language;
-
-Alpha ed/tech.
+Exercícios propostos nas aulas do Alpha ed/tech.
