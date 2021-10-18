@@ -20,7 +20,8 @@ window.requestAnimationFrame(function loop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.font = "48px serif";
     ctx.fillStyle = "#A1683A"
-    ctx.fillText("~Respiração guiada~", canvas.width * 0.295, canvas.height * 0.15)
+    ctx.textAlign = "center";
+    ctx.fillText("~Respiração guiada~", canvas.width / 2, canvas.height * 0.25)
 
     //Inspirando
     if (modo == 0) {
@@ -29,7 +30,8 @@ window.requestAnimationFrame(function loop() {
         raio3 += 0.6
         ctx.font = "48px serif";
         ctx.fillStyle = "#A1683A"
-        ctx.fillText("Inspire pelo nariz", canvas.width * 0.33, canvas.height * 0.85)
+        ctx.textAlign = "center";
+        ctx.fillText("Inspire pelo nariz", canvas.width / 2, canvas.height * 0.75)
     }
     if (raio >= 200) {
         modo = 1
@@ -41,7 +43,9 @@ window.requestAnimationFrame(function loop() {
         raio3 -= 0.001
         parametro -= 0.005
         ctx.font = "48px serif";
-        ctx.fillText("Prenda a respiração", canvas.width * 0.31, canvas.height * 0.85)
+        ctx.fillStyle = "#A1683A"
+        ctx.textAlign = "center";
+        ctx.fillText("Prenda a respiração", canvas.width / 2, canvas.height * 0.75)
 
     }
     if (parametro <= 0.3) {
@@ -54,7 +58,9 @@ window.requestAnimationFrame(function loop() {
         raio3 -= 0.4
         parametro = 1.0
         ctx.font = "48px serif";
-        ctx.fillText("Expire pela boca", canvas.width * 0.33, canvas.height * 0.85)
+        ctx.fillStyle = "#A1683A"
+        ctx.textAlign = "center";
+        ctx.fillText("Expire pela boca", canvas.width / 2, canvas.height * 0.75)
 
     }
     if (raio <= 39) {
