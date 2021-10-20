@@ -1,0 +1,28 @@
+.div__id {
+    color: red;
+}
+
+
+a[href] {
+    color: red;
+}
+
+a:hover {
+    color:aquamarine;
+}
+
+ul::first-line {
+    color:blueviolet;
+}
+
+h1 {
+    color: blue;
+}
+
+.button__1{
+    width: 50%;
+}
+
+div > p {
+    text-decoration: underline;
+}
