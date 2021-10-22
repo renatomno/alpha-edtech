@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div__section {
+    width: 100vw;
+    height: 20vh;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 1px solid;
+}
+
+.area1 {
+    background-color: #98A0EB;
+}
+
+.area2 {
+    background-color: rgba(152, 160, 235, 0.5);
+}
+
+.area3 {
+    background: rgb(152,160,235);
+background: radial-gradient(circle, rgba(152,160,235,1) 20%, rgba(238,168,182,1) 100%);
+}
+
+.area4 {
+    background-image: url(/modulo03/aula04/assets/imgs/bg-02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.area5 {
+    background-image: url(/modulo03/aula04/assets/imgs/bg-01.png);
+}

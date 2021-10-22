@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.div__section{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+}
+
+.title__section{
+    text-align: center;
+    margin-bottom: 10%;
+    color: #FFF
+}
+
+.card__container{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-image: url(../assets/imgs/img-renato.jpeg);
+    margin: 0 auto;
+    box-shadow: 10px 11px 10px black;
+    
+}

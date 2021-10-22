@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div__section {
+    width: 100vw;
+    height: 20vh;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 1px solid;
+}
+
+.area1 {
+    background-color: #98A0EB;
+    border-style: dotted
+}
+
+.area2 {
+    margin-top: 2px;
+    background-color: rgba(152, 160, 235, 0.5);
+    border-style: dashed;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.area3 {
+    margin-top: 2px;
+    border-style: groove;
+    background-image: url(/modulo03/aula04/assets/imgs/bg-01.png);
+    border-width: 20px;
+}
+
+.area4 {
+    margin-top: 2px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 12px;
+    background: rgb(152,160,235);
+background: radial-gradient(circle, rgba(152,160,235,1) 20%, rgba(238,168,182,1) 100%);
+   
+    
+}
+
+.area5 {
+    margin-top: 2px;
+    border-style: double;
+    border-color: red;
+    background-image: url(/modulo03/aula04/assets/imgs/bg-02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
