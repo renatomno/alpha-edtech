@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'hussar-bold.woff2';
+    src: url("../assets/fonts/hussar-bold.woff2");
+}
+
+.main__container {
+    width: 100vw;
+    height: 100vh; 
+}
+
+.ol__container {
+    width: 50%;
+    height: 100%;
+    background-color: #f9c0bc;
+    float: left;
+}
+
+.ol__title, .ul__title{
+    color: #FFF;
+    text-align: center;
+    font-size: 52px;
+    font-family: 'hussar-bold.woff2';
+
+}
+
+.ol__list{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+.ol__item, .ul__item{
+    color: #FFF;
+    font-size: 36px;
+    font-family: "hussar-bold.woff2"
+}
+
+.ul__container {
+    width: 50%;
+    height: 100%;
+    background-color: #c1e4de;
+    float: right;
+}
+
+.ul__list{
+    list-style-type: none;
+    list-style-position: outside;
+
+}
+
+.ul__item{
+    background-image: url(../assets/imgs/img-list.png);
+    background-position: 0 0;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
