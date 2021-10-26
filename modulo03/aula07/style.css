@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e0e0ce;
+}
+
+.card__container{
+    width: 80%;
+    height: 30%;
+    background-color: #FFF;
+    margin: 0 auto 50px auto;
+}
+
+.card__title{
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-family: 'Jua', sans-serif;
+}
+
+.card__colors__container{
+    margin: 4rem auto 0 auto;
+    width: 80%;
+    height: 60%;
+}
+
+.color {
+    display: inline-block;
+    width: 15%;
+    height: 80%;
+    margin-right: 2rem;
+}
+
+.hex--1{
+    background-color: #587B7F;
+}
+
+.hex--2{
+    background-color: #1E2019;
+}
+
+.hex--3{
+    background-color: #394032;
+}
+
+.hex--4{
+    background-color: #8DAB7F;
+}
+
+.hex--5{
+    background-color: #CFEE9E;
+}
+
+.hexa--1{
+    background-color: #587B7F80;
+}
+
+.hexa--2{
+    background-color: #1E201980;
+}
+
+.hexa--3{
+    background-color: #39403280;
+}
+
+.hexa--4{
+    background-color: #8DAB7F80;
+}
+
+.hexa--5{
+    background-color: #CFEE9E80;
+}
+
+.rgb--1{
+    background-color: rgb(0, 20, 39)
+}
+
+.rgb--2{
+    background-color: rgb(112, 141, 129)
+}
+.rgb--3{
+    background-color: rgb(244, 213, 141)
+}
+.rgb--4{
+    background-color: rgb(191, 6, 3)
+}
+.rgb--5{
+    background-color: rgb(141, 8, 1)
+}
+
+.rgba--1{
+    background-color: rgba(84, 122, 158, 0.5)
+}
+
+.rgba--2{
+    background-color: rgb(112, 141, 129, 0.5)
+}
+
+.rgba--3{
+    background-color: rgb(244, 213, 141, 0.5)
+}
+
+.rgba--4{
+    background-color: rgb(191, 6, 3, 0.5)
+}
+
+.rgba--5{
+    background-color: rgb(141, 8, 1, 0.5)
+}
+
+.hsl--1{
+    background-color: hsl(300, 4%, 81%)
+}
+
+.hsl--2{
+    background-color: hsl(37, 98%, 53%)
+}
+
+.hsl--3{
+    background-color: hsl(312, 5%, 36%)
+}
+
+.hsl--4{
+    background-color: hsl(196, 67%, 33%)
+}
+
+.hsl--5{
+    background-color: hsl(207, 38%, 25%)
+}
+
+.hsla--1{
+    background-color: hsl(300, 4%, 81%, 0.5)
+}
+
+.hsla--2{
+    background-color: hsl(37, 98%, 53%, 0.5)
+}
+
+.hsla--3{
+    background-color: hsl(312, 5%, 36%, 0.5)
+}
+
+.hsla--4{
+    background-color: hsl(196, 67%, 33%, 0.5)
+}
+
+.hsla--5{
+    background-color: hsl(207, 38%, 25%, 0.5)
+}
+
+.preset--1{
+    background-color: red 
+}
+
+.preset--2{
+    background-color: yellowgreen
+}
+
+.preset--3{
+    background-color: pink 
+}
+
+.preset--4{
+    background-color: teal 
+}
+
+.preset--5{
+    background-color: yellow 
+}
+
+.current{
+    color: red;
+    border: 5px dashed currentcolor;
+}
+
