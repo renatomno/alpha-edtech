@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.section__container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260801;
+}
+
+.app__container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    background-color: #03A688;
+    border-radius: 12px;
+
+}
+
+.app__title{
+    color: #F4EDEA;
+    font-family: "Jua", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.app__subtitle{
+    color: #F4EDEA;
+    font-family: "Jua", sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.app__paleta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+.app__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.app__card__cor {
+    width: 40%;
+    height: 90%;
+    border-radius: 12px;
+}
+
+.app__card__title{
+    color: #F4EDEA;
+    font-family: "Jua", sans-serif;
+}
+
+.app__img__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__img{
+    width: 200px;
+    height: auto;
+}
+
+.primary1 {
+    background-color: #0000FF
+}
+
+.primary2 {
+    background-color: #FF0000
+}
+
+.primary3 {
+    background-color: #FFFF00
+}
+
+.secondary1{
+    background-color: #FF6600
+}
+
+.secondary2{
+    background-color: #00FF00
+}
+
+.secondary3{
+    background-color: #6600FF
+}
