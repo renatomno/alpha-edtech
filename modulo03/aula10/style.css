@@ -6,7 +6,7 @@
 
 #navbar {
     background-color: #1D3557;
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar__list {
@@ -209,6 +209,23 @@ a, a:hover, a:focus, a:active{
     list-style-position: inside;
 }
 
+.interesses__list{
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.habilidades__list__item {
+    margin-bottom: 10px;;
+}
+
+.separator {
+    margin-bottom: 30px;
+}
+
+.habilidades__list__item--strong{
+    font-weight: bold;
+}
+
 #interesses {
     display: flex;
     justify-content:center;
@@ -238,12 +255,13 @@ a, a:hover, a:focus, a:active{
 
 .footer{
     display: flex;
+    flex-direction: column;
     width: 60%;
     justify-content:space-between;
     height: 100%;
 }
 
-.footer__contain--1{
+/* .footer__contain--1{
     margin-right: 10%;
     align-items: center;
     height: 100%;
@@ -258,6 +276,13 @@ a, a:hover, a:focus, a:active{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+} */
+
+.footer__flex--1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .footer__title{
@@ -271,7 +296,13 @@ a, a:hover, a:focus, a:active{
     margin-bottom: 0;
 }
 
-.footer__lowbar__icons{
+
+.footer__lowbar__icons--1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.footer__lowbar__icons--2{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -281,4 +312,72 @@ a, a:hover, a:focus, a:active{
     border: 2px solid #1D3557;
     border-radius: 50%;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px){
+    #navbar{
+        display:none;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .home__sidebar{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__sidebar__pfp{
+        margin-top: -7rem;
+        margin-bottom: 3rem;
+        width: 200px;
+        height: 200px;
+        z-index: 100;
+    }
+
+    .home__sidebar__subtitle, .home__sidebar__info, .home__sidebar__icons{
+        margin-bottom: 2rem;
+    }
+
+    .home__bg__text{
+        display: none;
+    }
+
+    #formacao, #habilidades, .footer__flex--1, .footer__flex--2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formacao, .experiencia, .habilidades, .interesses{
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .footer__subtitle{
+        text-align: center;
+    }
+
+    .footer__lowbar__icons--2{
+        margin-top: 2rem;
+    }
+
+    .interesses{
+        margin: 3rem 0;
+    }
+
+    .home__bg{
+        position: relative;
+    }
+
+    .home__bg__img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }

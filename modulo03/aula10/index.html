@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Conheça Renato Oliveira!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,8 @@
     <header id="navbar">
         <ul class="navbar__list">
             <li class="navbar__list__item"><a class="navbar__list__anchor" href="#sobre">SOBRE</a></li>
-            <li class="navbar__list__item"><a class="navbar__list__anchor" href="#formacao">EXPERIÊNCIA E FORMAÇÃO</a></li>
+            <li class="navbar__list__item"><a class="navbar__list__anchor" href="#formacao">EXPERIÊNCIA E FORMAÇÃO</a>
+            </li>
             <li class="navbar__list__item"><a class="navbar__list__anchor" href="#habilidades">HABILIDADES</a></li>
         </ul>
     </header>
@@ -123,39 +125,52 @@
 
             <ul class="habilidades__list">
                 <li class="habilidades__list__item">
-                    <span class="habilidades__content">HTML e CSS < 1 ano de experiência</span>
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">HTML e CSS</span>
+                        : experiência em criação de páginas estáticas;
+                        estilizadas.</span>
                 </li>
-                <li>
-                    <span class="habilidades__content">GIT: < 1 ano de experiência</span>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">GIT</span>
+                        : gerenciamento de versões diferentes de uma aplicação
+                        web;</span>
 
                 </li>
-                <li>
-                    <span class="habilidades__content">Figma < 1 ano de experiência</span>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">Figma</span>
+                        : prototipagem de aplicações web e mobile;</span>
 
                 </li>
-                <li>
-                    <span class="habilidades__content">JavaScript: 1 ano de experiência</span>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">JabaScript</span>
+                        : manipulação de elementos html e css para
+                        funcionalidade de páginas;</span>
 
                 </li>
-                <li>
-                    <span class="habilidades__content">Photoshop: 1 ano de experiência</span>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">Photoshop</span>
+                        : edição de imagem e ilustração digital;</span>
 
                 </li>
-                <li>
-                    <span class="habilidades__content">Python: 2 anos de experiência</span>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">Python</span>
+                        : experiência em desenvolver algoritmos para cálculos
+                        numéricos;</span>
+                    <div class="separator"></div>
+                </li>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">Português</span>
+                        : Nativo;</span>
 
                 </li>
-
-                <li>
-                    <span class="habilidades__content">Português: Nativo</span>
-
-                </li>
-                <li>
-                    <span class="habilidades__content">Inglês: Avançado</span>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">Inglês</span>
+                        : Intermediário - fala pouco, compreende bem e lê bem;;
+                    </span>
 
                 </li>
-                <li>
-                    <span class="habilidades__content">Russo: Básico</span>
+                <li class="habilidades__list__item">
+                    <span class="habilidades__content"><span class="habilidades__list__item--strong">Russo</span>
+                        : Básico - leve compreensão do idioma;</span>
 
                 </li>
 
@@ -164,10 +179,20 @@
         <div class="interesses">
             <h2 class="interesses__title">Interesses</h2>
             <p class="interesses__subtitle">FORA DO ESCRITÓRIO</p>
-            <p class="interesses__content">Pintura</p>
-            <p class="interesses__content">Ilustração digital</p>
-            <p class="interesses__content">Música</p>
-            <p class="interesses__content">Leitura</p>
+            <ul class="interesses__list">
+                <li>
+                    <span class="interesses__content">Pintura</p>
+                </li>
+                <li>
+                    <span class="interesses__content">Ilustração digital</p>
+                </li>
+                <li>
+                    <span class="interesses__content">Música</p>
+                </li>
+                <li>
+                    <span class="interesses__content">Leitura</p>
+                </li>
+            </ul>
 
         </div>
     </section>
@@ -176,9 +201,18 @@
     <footer id="footer">
         <div class="footer">
 
-            <div class="footer__contain--1">
+            <div class="footer__flex--1">
                 <h2 class="footer__title">Entre em contato!</h2>
-                <div class="footer__lowbar__icons">
+
+                <div class="footer__card1">
+                    <h2 class="footer__subtitle">xrenatomno@gmail.com</h2>
+                    <h2 class="footer__subtitle">(84)99209-9628</h2>
+                </div>
+            </div>
+
+
+            <div class="footer__flex--1">
+                <div class="footer__lowbar__icons--1">
                     <a href="https://linkedin.com/in/renatomno" target="_blank"><img
                             src="assets/icons/icon-linkedin-b.svg" alt="" class="home__sidebar__icons--linkedin"></a>
                     <a href="https://github.com/renatomno" target="_blank"><img src="assets/icons/icon-github-b.svg"
@@ -186,20 +220,13 @@
                     <a href="https://instagram.com/rntmno" target="_blank"><img src="assets/icons/icon-instagram-b.svg"
                             alt="" class="home__sidebar__icons--instagram"></a>
                 </div>
-            </div>
 
-            <div class="footer__contain--2">
-                <div class="footer__card1">
-                    <h2 class="footer__subtitle">xrenatomno@gmail.com</h2>
-                    <h2 class="footer__subtitle">(84)99209-9628</h2>
-                </div>
-
-
-                <div class="footer__lowbar__icons">
+                <div class="footer__lowbar__icons--2">
                     <a href="#navbar"><img src="assets/icons/icon-arrow-up.svg" alt="ícone seta para cima"
                             class="footer__lowbar__icons--arrowup">
                 </div>
             </div>
+
 
         </div>
 
