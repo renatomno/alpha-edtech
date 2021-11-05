@@ -285,6 +285,9 @@ a, a:hover, a:focus, a:active{
     width: 100%;
 }
 
+.footer__card1{
+    text-align: center;
+}
 .footer__title{
     color: #222222;
 }
