@@ -29,7 +29,7 @@ a, a:hover, a:focus, a:active{
     color: inherit;
 }
 
-.home {
+#home {
     display: flex;
     width: 100%;
     height: 60vh;
@@ -322,7 +322,7 @@ a, a:hover, a:focus, a:active{
         display:none;
     }
 
-    .home{
+    #home{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
