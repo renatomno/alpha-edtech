@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", Sans-Serif;
+}
+
+.header{
+    min-height: 131px;
+    min-width: 980px;
+    width: 100%;
+}
+
+.header__desconto {
+    border-bottom: 1px solid #c7c7c7;
+    color: #767674;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-family: Arial;
+}
+
+.header__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.header__navbar--1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__navbar__logo{
+    margin-right: 15px;
+    width: 100px;
+}
+.header__navbar__title{
+    color: #4a4a4a;
+    font-size: 31px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial;
+
+}
+
+.header__navbar--2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.header__navbar__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 521px;
+}
+
+.header__navbar__list__item{
+    text-align: center;
+    color: #515151;
+    padding: 0 10px;
+    font-size: 12px/1.4em;
+    font-family: Arial;
+}
+
+.header__navbar__login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar__login__btn{
+    display: flex;
+    align-items: center;
+    padding: 6px 7px;
+}
+.header__navbar__login__icon{
+    width: 24px;
+    height: 24px;
+    padding: 6px 7px;
+
+}
+
+.header__navbar__login__title{
+    font-size:16px/1.4em;
+    font-family: Arial;
+    color: #696969;
+    padding: 0 7px;
+}
+
+.header__navbar__login__number{
+    background-color: #4a4a4a;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-size: 12px;;
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: Arial;
+}
