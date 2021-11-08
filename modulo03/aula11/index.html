@@ -6,45 +6,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link type="image/x-icon" href="//www.wix.com/favicon.ico" rel="shortcut icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Cielo Vestuário</title>
 </head>
 
 <body>
-    <header class="header">
+    <nav class="navbar">
         <h3 class="header__desconto standard__font">Ganhe 15% de desconto - Use o cupom CIELO</h3>
-        <nav class="header__navbar">
-            <div class="header__navbar--1">
-                <img src="assets/imgs/logo.svg" alt="Logo Cielo Vestuário" class="header__navbar__logo">
-                <span class="header__navbar__title standard__font">Cielo Vestuário</span>
-            </div>
 
-            <div class="header__navbar--2">
-                <ul class="header__navbar__list">
-                    <li class="header__navbar__list__item">HOME</li>
-                    <li class="header__navbar__list__item">LOJA</li>
-                    <li class="header__navbar__list__item">SOBRE</li>
-                    <li class="header__navbar__list__item">FÓRUM</li>
-                    <li class="header__navbar__list__item">MEMBROS</li>
-                    <li class="header__navbar__list__item">CONTATO</li>
-                </ul>
-                <div class="header__navbar__login">
-                    <div class="header__navbar__login__btn">
-                        <img class="header__navbar__login__icon" src="assets/icons/icon__user.svg"
-                            alt="icone de usuario">
-                        <span class="header__navbar__login__title">Login</span>
-                    </div>
-                    <div class="header__navbar__login__btn">
-                        <img class="header__navbar__login__icon" src="assets/icons/icon__cart.svg"
-                            alt="icone de um carro de compras">
-                        <span class="header__navbar__login__number"> o </span>
-                    </div>
+        <header class="header">
+            <nav class="header__navbar">
+                <div class="header__navbar--1">
+                    <img src="assets/imgs/logo.svg" alt="Logo Cielo Vestuário" class="header__navbar__logo">
+                    <span class="header__navbar__title standard__font">Cielo Vestuário</span>
+                </div>
 
+                <div class="header__navbar--2">
+                    <ul class="header__navbar__list">
+                        <li class="header__navbar__list__item">HOME</li>
+                        <li class="header__navbar__list__item">LOJA</li>
+                        <li class="header__navbar__list__item">SOBRE</li>
+                        <li class="header__navbar__list__item">FÓRUM</li>
+                        <li class="header__navbar__list__item">MEMBROS</li>
+                        <li class="header__navbar__list__item">CONTATO</li>
+                    </ul>
+                    <div class="header__navbar__login">
+                        <div class="header__navbar__login__btn">
+                            <img class="header__navbar__login__icon" src="assets/icons/icon__user.svg"
+                                alt="icone de usuario">
+                            <span class="header__navbar__login__title">Login</span>
+                        </div>
+                        <div class="header__navbar__login__btn">
+                            <img class="header__navbar__login__icon" src="assets/icons/icon__cart.svg"
+                                alt="icone de um carro de compras">
+                            <span class="header__navbar__login__number"> o </span>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </nav>
+
+    <section class="area1__container">
+        <div class="area1__title">
+            <h2 class="area1__title__text">Apresentamos Suas <br /> Novas Roupas <br />
+                de Treino</h2>
+            <a class="area1__title__btn">Compre agora</a>
+        </div>
+        <div class="area1__animationn">
+            <video src="assets/videos/video-intro.mp4" loop autoplay autostart class="area1__animation"></video>
+        </div>
+    </section>
+
+    <section class="area2__container">
+        <div class="area2__banner margin_right">
+            <div class="area2__banner__img img--1">
+                <img src="assets/imgs/img-banner-1.webp" alt="" class="area2__banner__img">
+                <div class="area2__banner__text">
+                    <h2>História da <br /> Cielo</h2>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    
+        </div>
+        <div class="area2__banner margin_right">
+            <div class="area2__banner__img img--2">
+                <img src="assets/imgs/img-banner-2.webp" alt="" class="area2__banner__img">
+                <div class="area2__banner__text">
+                    <h2>Veja nossa <br /> coleção</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="area2__banner">
+            <div class="area2__banner__img img--3">
+                <img src="assets/imgs/img-banner-3.webp" alt="" class="area2__banner__img">
+                <div class="area2__banner__text">
+                    <h2>Junte-se à <br /> comunidade</h2>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="transition">
+        <h2 class="header__transition">NOVIDADES</h2>
+    </div>
+
+    <section class="area3__container">
+        <div class="area3__banner margin_right">
+            <div class="div__relative">
+                <img class="area3__banner__img" src="assets/imgs/img-banner-4.webp" />
+                <span class="area3__banner__novidade">Novidade</span>
+            </div>
+            <div class="area3__banner__text">
+                <h2 class="area3__banner__text__title">Top para correr</h2>
+                <div class="separator"></div>
+                <h3 class="area3__banner__text__price">R$ 19,00</h3>
+            </div>
+        </div>
+        <div class="area3__banner margin_right">
+            <div class="div__relative">
+                <img class="area3__banner__img" src="assets/imgs/img-banner-5.webp" />
+                <span class="area3__banner__novidade">Novidade</span>
+            </div>
+            <div class="area3__banner__text">
+                <h2 class="area3__banner__text__title">Top para correr</h2>
+                <div class="separator"></div>
+                <h3 class="area3__banner__text__price">R$ 19,00</h3>
+            </div>
+        </div>
+        <div class="area3__banner margin_right">
+            <div class="div__relative">
+                <img class="area3__banner__img" src="assets/imgs/img-banner-6.webp" />
+                <span class="area3__banner__novidade">Novidade</span>
+            </div>
+            <div class="area3__banner__text">
+
+                <h2 class="area3__banner__text__title">Top para correr</h2>
+                <div class="separator"></div>
+                <h3 class="area3__banner__text__price">R$ 19,00</h3>
+            </div>
+        </div>
+        </div>
+        <div class="area3__banner">
+            <div class="div__relative">
+                <img class="area3__banner__img" src="assets/imgs/img-banner-7.webp" />
+                <span class="area3__banner__novidade">Novidade</span>
+            </div>
+
+            <div class="area3__banner__text">
+                <h2 class="area3__banner__text__title">Top para correr</h2>
+                <div class="separator"></div>
+
+                <h3 class="area3__banner__text__price">R$ 19,00</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="transition--2">
+        <h2 class="header__transition">SIGA-NOS NO <br /> INSTAGRAM</h2>
+    </div>
+
+    <section class="area4__container">
+        <img src="assets/imgs/img-banner-8.jpg" alt="" class="area4__img">
+        <img src="assets/imgs/img-banner-9.jpg" alt="" class="area4__img">
+        <img src="assets/imgs/img-banner-10.jpg" alt="" class="area4__img">
+        <img src="assets/imgs/img-banner-11.jpg" alt="" class="area4__img">
+        <img src="assets/imgs/img-banner-12.jpg" alt="" class="area4__img">
+    </section>
+
+    <footer class="footer">
+        <div class="footer__column">
+            <h2 class="footer__column__title">Cielo Vestuário</h2>
+            <ul class="footer__column__list">
+                <li class="footer__column__list__item">Home</li>
+                <li class="footer__column__list__item">Loja</li>
+                <li class="footer__column__list__item">Sobre</li>
+                <li class="footer__column__list__item">Fórum</li>
+                <li class="footer__column__list__item">Contato</li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h2 class="footer__column__title">Explore</h2>
+            <ul class="footer__column__list">
+                <li class="footer__column__list__item">FAQ</li>
+                <li class="footer__column__list__item">Envio e Devoluções</li>
+                <li class="footer__column__list__item">Política da Loja</li>
+                <li class="footer__column__list__item">Métodos de Pagamento</li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h2 class="footer__column__title">Assine nossa newsletter</h2>
+            <ul class="footer__column__list">
+                <li class="footer__column__list__item">
+                    <form action="">
+                        <input type="email" class="footer__column__list__item__input"
+                            placeholder="Insira o seu email aqui*">
+                    </form>
+                </li>
+                <li class="footer__column__list__item">
+                    <a href="#" class="footer__column__list__item__btn">Inscrever-se</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h2 class="footer__column__title">Siga-nos</h2>
+            <ul class="footer__column__list">
+                <li class="footer__column__list__item">Facebook</li>
+                <li class="footer__column__list__item">Twitter</li>
+                <li class="footer__column__list__item">Instagram</li>
+                <li class="footer__column__list__item">Pinterest</li>
+            </ul>
+        </div>
+
+
+    </footer>
+    <section class="area5__container">
+        <div class="area5__footer">
+
+            <p class="area5__credits">© 2023 por Ciolo Vestuário. Orgulhosamente criado com Wix.com</p>
+            <p class="area5__credits">Cielo Vestuário Ltda. - CNPJ: 12.345.678/0001-00 - Av. Bernardino de Campos, 98 -
+            </p>
+            <p class="area5__credits">São Paulo, SP 12345-678 - info@meusite.com - Telefone: (11) 3456-7890</p>
+        </div>
+    </section>
+
 </body>
 
 </html>
