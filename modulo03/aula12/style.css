@@ -92,7 +92,6 @@ a, a:hover, a:focus, a:active{
     white-space: nowrap;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    transition: 0.4s
 }
 
 .margin__right{
@@ -100,11 +99,38 @@ a, a:hover, a:focus, a:active{
 
 }
 
+.dropdown{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f780;
+    width: 100%;
+    z-index: 10;
+    list-style: none;
+    text-align:center;
+    padding: 10px 50px;
+    margin-top: 30px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.margin__bottom{
+    margin-bottom: 20px;
+}
 .active {
     color: #99d7ea;
 }
 
-.navbar__list__item:hover{
+.span__active:hover{
     color: #99d7ea;
 }
 

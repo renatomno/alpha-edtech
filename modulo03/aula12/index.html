@@ -35,10 +35,20 @@
 
     <nav class="navbar">
         <ul class="navbar__list">
-            <li class="navbar__list__item active margin__right">Home</li>
-            <li class="navbar__list__item margin__right">Quem Somos</li>
-            <li class="navbar__list__item margin__right">Nossos Serviços</li>
-            <li class="navbar__list__item"> Fale Conosco</li>
+            <li class="navbar__list__item margin__right active">Home</li>
+            <li class="navbar__list__item margin__right dropdown"><span class="span__active">Quem Somos</span>
+                <ul class="dropdown-content">
+                    <li>Nossa Equipe</li>
+                </ul>
+            </li>
+            <li class="navbar__list__item margin__right dropdown"><span class="span__active">Nossos Serviços</span>
+                <ul class="dropdown-content">
+                    <li class="margin__bottom">Banho e Tosa</li>
+                    <li class="margin__bottom">Acessórios</li </li>
+                    <li>Hotel</li>
+                </ul>
+            </li>
+            <li class="navbar__list__item span__active"> Fale Conosco</li>
         </ul>
     </nav>
 
