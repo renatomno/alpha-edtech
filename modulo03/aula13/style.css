@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+.header__container{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.header{
+    width: 90%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #292325;
+    position: relative;
+    color: #3c3638;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.active{
+    color: #bab3b4;
+}
+
+.header__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__list__item:hover{
+    color: #bab3b4;
+    cursor: pointer;
+}
+.margin__right--1{
+    margin-right: 110px;
+}
+
+.margin__right--2{
+    margin-right: 20px;
+}
+
+.header__iconbar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.header__iconbar__item{
+    cursor: pointer;
+    width: 29px;
+    height: 29px;
+}
+
+.area1__container{
+    width: 100%;
+    height: 960px;
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area1__banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+.area1__banner__title{
+    letter-spacing: 4.25px;
+    color: #4f4f4f;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.area1__banner__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.area1__banner__cards__card{
+    background-color: #f7e9e4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.area1__banner__cards__card__img{
+    width: 100%;
+    height: 760px;
+    min-width: 320px;
+    object-fit: cover;
+}
+
+.area1__banner__cards__card__title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    font-weight: 700 ;
+    color: #292325;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.area1__banner__cards__card__btn{
+    background-color: #ffffff;
+    color: #292325;
+    padding: 16px 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700 ;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.area1__banner__cards__card__btn:hover{
+    border: 2px solid black;
+    margin-top: 36px;
+
+}
+
+.transition__container{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition{
+    background-color: #ebebf2;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition__title{
+    width: auto;
+    white-space: nowrap;
+    text-align: center;
+    font-family: raleway;
+    letter-spacing: 2.2px;
+}
+
+.area2__container{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area2__banner{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.area2__banner__card__img{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+
+.area2__banner__card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.area2__banner__card__text{
+    bottom: 90px;
+    right: 60px;
+    position: absolute;
+
+    background-color: #ffffff;
+    color: #292325;
+    padding: 16px 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.area2__banner__card__text:hover{
+    border: 2px solid black;
+}
+
+.area3__container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area3__banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    width: 90%;
+    height: 100%;
+}
+
+.area3__banner__title{
+    font-family: raleway;
+    color: #292325;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.area3__banner__gallery{
+    width: calc(100% - 70px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1000px;
+
+}
+
+.area3__banner__gallery__img{
+    width: calc(100% / 8);
+    
+}
+
+.margin__right--3{
+    margin-right: 10px;
+}
+
+.area4__container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #322c2e;
+}
+
+.area4__caltoaction{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.area4__calltoaction__title{
+    font-family: raleway;
+    color: #292325;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.area4__calltoaction__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.area4__calltoaction__email{
+    color: #2f292b;
+    font-size: 18px;
+    width: 400px;
+    height: 22px;
+    padding: 10px 14px;
+    font-family: raleway;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.area4__calltoaction__email::placeholder{
+    color: #2f292b;
+}
+
+.area4__calltoaction__submit{
+    width: 432px;
+    height: 44px;
+    padding: 14px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #292325;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.4s;
+    font-family: raleway;
+
+}
+
+.area4__calltoaction__submit:hover{
+    background-color: #CCBCBF;
+    color: #292325;
+    cursor: pointer;
+}
+
+.footer__container{
+    width: 100%;
+    height: 60px;
+    background-color: #f7e9e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text{
+    color: #292325;
+    font-family: raleway;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
