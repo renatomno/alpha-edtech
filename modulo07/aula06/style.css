@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(178,152,195);
+background: linear-gradient(180deg, rgba(178,152,195,1) 0%, rgba(29,253,248,1) 100%);
+}
