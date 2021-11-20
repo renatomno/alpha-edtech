@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(253,29,29,1) 100%);
+    background-size: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+    color:#FBFBFF;
+}
+
+a, a[active], a[hover], a[link]{
+    text-decoration: inherit;
+    color: blue;
+}
+
+.app__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+}
+.area1__container{
+    width: 45%;
+    height: 90%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area1__title, .area2__title{
+    font-size: 38px;
+    margin-bottom: 5%;
+}
+
+.area1__text{
+    text-align: center;
+    font-size: 28px;
+}
+
+.area2__container{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area2__carousel{
+    position: relative;
+}
+
+.area2__carousel__img--album{
+    width: 500px;
+    height: 500px;
+}
+
+.area2__carousel__img--arrowleft {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.area2__carousel__img--arrowright {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.area2__carousel__img--arrowleft, .area2__carousel__img--arrowright {
+    background-color: #FBFBFF;
+    cursor: pointer;
+}
+
+.footer{
+    text-align: center;
+}
+.none{
+    display: none;
+}
