@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@100;300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo__img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header__logo__title{
+    text-align: center;
+}
+
+.header__navbar__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header__navbar__list__item{
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.header__navbar__list__item:hover{
+    border-bottom: 2px solid #7209b7;
+}
+
+.ativo {
+    border-bottom: 2px solid #7209b7;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.main__title{
+    margin-bottom: 5%;
+}
+
+input {
+    margin-bottom: 3%;
+}
+
+.main__form{
+    text-align: center;
+    border: dotted 2px #7209b7;
+    padding: 10px;
+}
+
+.main__form__submit{
+    background-color: #7209b7;
+    padding: 10px;
+    border: none;
+    color: #F2F2F2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main__form__submit:active{
+    background-color: #f2f2f2;
+    color: #7209b7;
+    border: 1px solid #7209b7;
+    padding: 9px 10px;
+}
+
+.none{
+    display: none;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card__container{
+    font-weight: 100;
+    border: dashed 2px #7209b7;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.card__texto{
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}

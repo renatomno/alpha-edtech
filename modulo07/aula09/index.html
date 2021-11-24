@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <script defer src="main.js"></script>
+    <title>bon appetit </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/icon.png" alt="logo" class="header__logo__img">
+            <h2 class="header__logo__title">bon <br /> appetit</h2>
+        </div>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li class="header__navbar__list__item">Início</li>
+                <li class="header__navbar__list__item">Sobre</li>
+                <li class="header__navbar__list__item">Galeria</li>
+                <li class="header__navbar__list__item ativo">Avalie-nos!</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="main__title">Avalie-nos!</h1>
+
+        <form action="" class="main__form">
+            <label for="fname" class="main__form__label">Nome: </label>
+            <input type="text" name="name" id="fname">
+
+            <label for="fage" class="main__form__label">Idade: </label>
+            <input type="number" name="age" id="fage">
+
+            <p class="main__form__p">O que achou do ambiente do restaurante?</p>
+            <input type="radio" onclick="ambienteRuim()" name="ambiente" id="ambienteRUIM" value="Ruim">
+            <label for="ambienteRUIM" class="main__form__label">Ruim</label>
+            <input type="radio" onclick="ambienteMedio()" name="ambiente" id="ambienteMEDIO" valoue="Regular">
+            <label for="ambienteMEDIO" class="main__form__label">Regular</label>
+            <input type="radio" onclick="ambienteBom()" name="ambiente" id="ambienteBOM" value="Bom">
+            <label for="ambienteBOM" class="main__form__label">Bom</label>
+            <br />
+            <img src="" alt="descricao ambiente" class="img__ambiente none">
+
+            <p class="main__form__p">O que achou da comida do restaurante?</p>
+            <input type="radio" onclick="comidaRuim()" name="comida" id="comidaRUIM" value="Ruim">
+            <label for="comidaRUIM" class="main__form__label">Ruim</label>
+            <input type="radio" onclick="comidaMedio()" name="comida" id="comidaMEDIO" value="Regular">
+            <label for="comidaMEDIO" class="main__form__label">Regular</label>
+            <input type="radio" onclick="comidaBom()" name="comida" id="comidaBOM" value="Bom">
+            <label for="comidaBOM" class="main__form__label">Bom</label>
+            <br />
+            <img src="" alt="descricao comida" class="img__comida none">
+
+
+
+            <p class="main__form__p">Voltaria a comer no restaurante bon appetit?</p>
+            <input type="radio" onclick="voltariaNao()" name="voltaria" id="voltariaNAO" value="Não">
+            <label for="voltariaNAO" class="main__form__label">Não</label>
+            <input type="radio" onclick="voltariaTalvez()" name="voltaria" id="voltariaTALVEZ" value="Talvez">
+            <label for="voltariaTALVEZ" class="main__form__label">Talvez</label>
+            <input type="radio" onclick="voltariaSim()" name="voltaria" id="voltariaSIM" value="Sim">
+            <label for="voltariaSIM" class="main__form__label">Sim</label>
+            <br />
+            <img src="" alt="descricao voltaria" class="img__voltaria none">
+            <br />
+            <input type="button" onclick="criarFeedback()" value="ENVIAR!" class="main__form__submit">
+        </form>
+    </main>
+
+    <h2 class="title">Avaliações anteriores</h2>
+    <section class="feedback">
+
+    </section>
+</body>
+
+</html>
