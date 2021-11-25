@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>what-a-burguer</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <h2 class="header__logo__title">Hamburgueria <br /> what-a-burguer</h2>
+        </div>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li class="header__navbar__list__item">Início</li>
+                <li class="header__navbar__list__item">Sobre</li>
+                <li class="header__navbar__list__item">Galeria</li>
+                <li class="header__navbar__list__item ativo">Faça seu pedido!</li>
+            </ul>
+        </nav>
+    </header>
+    <form action="javascript:void(0);">
+        <h3>Escolha seu pão:</h3>
+        <input type="radio" name="pao" value="frances" id="paofrances" class="radio__pao">
+        <label for="paofrances">Pão Francês (R$ 3,00)</label>
+        <input type="radio" name="pao" value="australiano" id="paoaustraliano" class="radio__pao">
+        <label for="paoaustraliano">Pão Australiano (R$ 8,00)</label>
+        <input type="radio" name="pao" value="brioche" id="paobrioche" class="radio__pao">
+        <label for="paobrioche">Pão de Brioche (R$ 6,00)</label>
+
+        <h3>Escolha seu Hambúrguer:</h3>
+        <input type="radio" name="hamburguer" value="picanha" id="hamburguerpicanha" class="radio__hamburger">
+        <label for="hamburguerpicanha">Hambúrguer de picanha (R$ 13,00)</label>
+        <input type="radio" name="hamburguer" value="costela" id="hamburguercostela" class="radio__hamburger">
+        <label for="hamburguercostela">Hambúrguer de costela (R$ 10,00)</label>
+        <input type="radio" name="hamburguer" value="vegano" id="hamburguervegano" class="radio__hamburger">
+        <label for="hamburguervegano">Hambúrguer vegano (R$ 12,00)</label>
+
+        <h3>Escolha sua salada:</h3>
+        <input type="radio" name="salada" value="alface" id="saladaalface" class="radio__salada">
+        <label for="saladaalface">Alface (R$ 1,50)</label>
+        <input type="radio" name="salada" value="tomate" id="saladatomate" class="radio__salada">
+        <label for="saladatomate">Tomate (R$ 1,50)</label>
+        <input type="radio" name="salada" value="semsalada" id="saladasem" class="radio__salada">
+        <label for="saladasem">Sem salada (R$ 0,00)</label>
+
+        <h3>Escolha seu queijo:</h3>
+        <input type="radio" name="queijo" value="mussarela" id="queijomussarela" class="radio__queijo">
+        <label for="queijomussarela">Mussarela (R$ 3,50)</label>
+        <input type="radio" name="queijo" value="prato" id="queijoprato" class="radio__queijo">
+        <label for="queijoprato">Prato (R$ 3,00)</label>
+        <input type="radio" name="queijo" value="cheddar" id="queijocheddar" class="radio__queijo" <label
+            for="queijocheddar">Cheddar (R$ 5,00)</label>
+        <br />
+        <input type="submit" value="Fazer pedido!" class="form__submit">
+
+    </form>
+    <h2>Pedidos feitos</h2>
+    <div class="pedidos">
+
+    </div>
+
+</body>
+
+</html>
