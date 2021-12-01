@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>GP Alpha</title>
+</head>
+
+<body>
+
+    <h1 class="title">Grande Prêmio 2021</h1>
+
+    <div class="app">
+        <form action="">
+            <h2>Selecione o tipo dos carros</h2>
+            <div class="form__div--1">
+                <label for="fpredefinido">Carros Predefinidos</label>
+                <input type="radio" name="tipo-carro" id="fpredefinido" value="predefinidos" class="margin-right">
+                <label for="faleatorio">Carros aleatórios</label>
+                <input type="radio" name="tipo-carro" id="faleatorio" value="aleatorios">
+            </div>
+            <br />
+            <h2>Selecione o tipo de corrida</h2>
+
+            <div clas="form__div--2">
+                <label for="frapida">Corrida rápida (10 voltas)</label>
+                <input type="radio" name="corrida" id="frapida" value="10" class="margin-right">
+                <label for="fgrandepremio">Grande Prêmio (70 voltas)</label>
+                <input type="radio" name="corrida" id="fgrandepremio" value="70" class="margin-right">
+                <label for="fenduro">Enduro (160 voltas)</label>
+                <input type="radio" name="corrida" id="fenduro" value="160" class="margin-right">
+                <label for="fpersonalizada">Voltas personalizadas</label>
+                <input type="radio" name="corrida" id="fpersonalizada" value="custom" class="margin-right">
+                <input type="number" placeholder="Número de voltas" id="fvoltapersonalizada">
+            </div>
+            <input type="submit" value="Correr!" id="fsubmit">
+        </form>
+
+        <div class="resultado">
+            <h2 class="ganhador"></h2>
+            <h2 class="participantes"></h2>
+        </div>
+
+        <div class="cards__container none">
+            <div class="card">
+                <h2 class="card__titulo--pedro"></h2>
+                <h3 class="card__velomin--pedro"></h3>
+                <h3 class="card__velomax--pedro"></h3>
+                <h3 class="card__derrapagem--pedro"></h3>
+            </div>
+            <div class="card">
+                <h2 class="card__titulo--juca"></h2>
+                <h3 class="card__velomin--juca"></h3>
+                <h3 class="card__velomax--juca"></h3>
+                <h3 class="card__derrapagem--juca"></h3>
+            </div>
+            <div class="card">
+                <h2 class="card__titulo--edna"></h2>
+                <h3 class="card__velomin--edna"></h3>
+                <h3 class="card__velomax--edna"></h3>
+                <h3 class="card__derrapagem--edna"></h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
