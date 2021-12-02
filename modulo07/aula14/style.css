@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form, .app__vetor--original, .app__vetor--inverso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vetor--original, .vetor--inverso{
+    letter-spacing: 3px;
+}
+
+.none{
+    display: none;
+}
+
