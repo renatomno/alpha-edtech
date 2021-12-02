@@ -3,7 +3,6 @@
 const btnSubmit = document.querySelector("#fsubmit")
 var vetorOriginal = []
 var vetorInverso = []
-var vetorCrescente = []
 
 btnSubmit.addEventListener("click", (event) => {
     event.preventDefault();
