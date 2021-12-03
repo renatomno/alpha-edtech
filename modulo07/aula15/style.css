@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2EC4B680;
+}
+
+.app__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 700px;
+    margin-bottom: 40px;
+}
+
+.linha1, .linha2, .linha3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100%/3)
+}
+
+.casa {
+    width: calc(100%/3);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover--efeito:hover{
+    background-color: #2EC4B690;
+}
+
+.casa--2{
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+}
+
+.casa--4{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.casa--6{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.casa--8{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.texto{
+    font-size: 150px;
+}
+
+.casa--vitoriosa{
+    background-color: greenyellow
+}
+
+.reset{
+    width: 160px;
+    height: 40px;
+    background-color: #5D2E8C;
+    border: none;
+    color: #FFF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.reset:active{
+    background-color: #FFF;
+    color: #5D2E8C;
+
+}
+
+.vencedor{
+    font-size: 48px;
+    margin-top: 70px;
+    
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
