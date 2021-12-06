@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>GP ALPHA ED/TECH</title>
+</head>
+
+<body>
+    <h1 class="titulo">GP ALPHA ED/TECH</h1>
+    <h2 CLASS="subtitulo">Seleciona a quantidade de voltas</h2>
+    <form action="">
+        <div class="form__corrida">
+
+            <label for="frapida">Corrida Rápida (10 voltas)</label>
+            <input type="radio" name="tipo__corrida" id="frapida" value="10">
+            <label for="fgrande">Grande Prêmio (70 voltas)</label>
+            <input type="radio" name="tipo__corrida" id="fgrande" value="70">
+            <label for="fenduro">Enduro (160 voltas)</label>
+            <input type="radio" name="tipo__corrida" id="fenduro" value="160">
+            <label for="fpersonalizada ">Personalizada</label>
+            <input type="radio" name="tipo__corrida" id="fpersonalizada" value="personalizada">
+            <input type="number" name="tipo__corrida" id="fnumpersonalizada">
+        </div>
+        <input type="submit" value="SORTEAR CARROS" id="fsorteio">
+
+        <div class="cards__container">
+            <h2 class="card__title">Carros do Pedro:</h2>
+            <div class="cards__deck">
+                <div class="card card__pedro">
+                    <label for="carro__pedro--1">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--pedro" id="carro__pedro--1" value="0">
+                    </label>
+                </div>
+                <div class="card card__pedro">
+                    <label for="carro__pedro--2">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--pedro" id="carro__pedro--2" value="1">
+                    </label>
+                </div>
+                <div class="card card__pedro">
+                    <label for="carro__pedro--3">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--pedro" id="carro__pedro--3" value="2">
+                    </label>
+                </div>
+                <div class="card card__pedro">
+                    <label for="carro__pedro--4">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--pedro" id="carro__pedro--4" value="3">
+                    </label>
+                </div>
+                <div class="card card__pedro">
+                    <label for="carro__pedro--5">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--pedro" id="carro__pedro--5" value="4">
+                    </label>
+                </div>
+            </div>
+            <h2 class="card__title">Carros do Juca:</h2>
+            <div class="cards__deck">
+                <div class="card card__juca">
+                    <label for="carro__juca--1">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--juca" id="carro__juca--1" value="0">
+                    </label>
+                </div>
+                <div class="card card__juca">
+                    <label for="carro__juca--2">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--juca" id="carro__juca--2" value="1">
+                    </label>
+                </div>
+                <div class="card card__juca">
+                    <label for="carro__juca--3">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--juca" id="carro__juca--3" value="2">
+                    </label>
+                </div>
+                <div class="card card__juca">
+                    <label for="carro__juca--4">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--juca" id="carro__juca--4" value="3">
+                    </label>
+                </div>
+                <div class="card card__juca">
+                    <label for="carro__juca--5">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--juca" id="carro__juca--5" value="4">
+                    </label>
+                </div>
+            </div>
+            <h2 class="card__title">Carros da Edna:</h2>
+            <div class="cards__deck">
+                <div class="card card__edna">
+                    <label for="carro__edna--1">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--edna" id="carro__edna--1" value="0">
+                    </label>
+                </div>
+                <div class="card card__edna">
+                    <label for="carro__edna--2">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--edna" id="carro__edna--2" value="1">
+                    </label>
+                </div>
+                <div class="card card__edna">
+                    <label for="carro__edna--3">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--edna" id="carro__edna--3" value="2">
+                    </label>
+                </div>
+                <div class="card card__edna">
+                    <label for="carro__edna--4">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--edna" id="carro__edna--4" value="3">
+                    </label>
+                </div>
+                <div class="card card__edna">
+                    <label for="carro__edna--5">
+                        <h3>Raridade: </h3>
+                        <span class="card__raridade"></span>
+                        <h3>Velocidade máxima: </h3>
+                        <span class="card__velomax"></span>
+                        <h3>Velocidade mínima: </h3>
+                        <span class="card__velomin"></span>
+                        <h3>Derrapagem: </h3>
+                        <span class="card__derrapagem"></span>
+                        <h3>Escolher</h3>
+                        <input type="radio" name="carro--edna" id="carro__edna--5" value="4">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form__botoes">
+            <input type="submit" value="RELIZAR CORRIDA" id="fsubmit">
+        </div>
+    </form>
+
+    <div class="vencedor__container">
+        <h2 class="vencedor"></h2>
+        <h2 class="ranking"></h2>
+    </div>
+</body>
+
+</html>
