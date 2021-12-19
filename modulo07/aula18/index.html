@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Cálculo de Juros</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="fnome">Nome do cliente:</label>
+        <input type="text" name="fnome" id="fnome" />
+        <label for="fdata">Data de vencimento</label>
+        <input type="date" id="fdata" />
+        <label for="fvalor">Valor da compra</label>
+        <input type="number" id="fvalor" />
+
+        <input type="submit" value="Adicionar" id="fsubmit" />
+        <input type="submit" value="Calcular Juros" id="fsubmitjuros" />
+    </form>
+
+    <table id="tabela">
+        <thead>
+            <th>Nome do Cliente</th>
+            <th>Data de vencimento</th>
+            <th>Valor da compra</th>
+            <th>Valor com juros</th>
+        </thead>
+
+        <tbody id="tabela__body">
+
+        </tbody>
+    </table>
+</body>
+
+</html>
