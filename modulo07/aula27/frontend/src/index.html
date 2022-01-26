@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Adicionar funcionário: </h2>
+    <form action="">
+        <label for="fnumeromatricula">Número de matrícula: </label>
+        <input type="number" name="fnumeromatricula" id="fnumeromatricula">
+        <label for="fnome">Nome: </label>
+        <input type="text" name="fnome" id="fnome">
+        <label for="framal">Ramal: </label>
+        <input type="number" name="framal" id="framal">
+        <label for="femail">Email: </label>
+        <input type="email" name="femail" id="femail">
+        <label for="fsetor">Setor: </label>
+        <input type="text" name="fsetor" id="fsetor">
+        <label for="fdatanascimento">Data de nascimento: </label>
+        <input type="date" name="fdatanascimento" id="fdatanascimento">
+        <input type="submit" value="Enviar" id="fsubmit">
+    </form>
+
+    <h2>Filtrar funcionários: </h2>
+    <form>
+        <input type="radio" name="fradiofiltro" value="aniversario" id="fradioaniversario">
+        <label for="fradioaniversario">Aniversário</label>
+        <input type="number" name="faniversario" id="faniversario">
+
+        <input type="radio" name="fradiofiltro" value="setor" id="fradiosetor">
+        <label for="fradiosetor">Setor</label>
+        <input type="text" name="fsetorfiltro" id="fsetorfiltro">
+
+        <input type="radio" name="fradiofiltro" value="ramal" id="fradioramal">
+        <label for="fradioramal">Ramal</label>
+        <input type="submit" value="Enviar" id="fsubmit2">
+    </form>
+
+    <h3></h3>
+</body>
+
+</html>
