@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    margin-right: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 15px 0;
+}
+
+iframe{
+    width: 500px;
+    height: 500px;
+}

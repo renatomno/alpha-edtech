@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>API CEP</title>
+</head>
+
+<body>
+
+    <h1>Consulte seu CEP!</h1>
+    <form action="#">
+        <input type="number" name="fcep" id="fcep">
+        <input type="button" value="Consultar CEP" id="fbtn">
+        <h5></h5>
+    </form>
+
+    <section>
+        <table id="table">
+            <thead id="table__head">
+                <tr id="table__head__row"></tr>
+            </thead>
+            <tbody id="table__body">
+                <tr id="table__body__row"></tr>
+            </tbody>
+        </table>
+
+    </section>
+</body>
+
+</html>
