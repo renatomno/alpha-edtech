@@ -1,0 +1,40 @@
+{
+    "gamesdatabase": [
+        {
+            "id": 1,
+            "name": "resident evil",
+            "year": 2010,
+            "genre": "zombie survival",
+            "multiplayer": false,
+            "offline": true,
+            "crossplatform": false
+        },
+        {
+            "id": 2,
+            "name": "Couter-Strike: Global Offensive",
+            "year": 2012,
+            "genre": "Tactical Shooter",
+            "multiplayer": true,
+            "offline": true,
+            "crossplatform": false
+        },
+        {
+            "id": "3",
+            "name": "Terraria",
+            "year": "2012",
+            "genre": "Simulator",
+            "multiplayer": true,
+            "offline": false,
+            "crossplatform": true
+        },
+        {
+            "id": "4",
+            "name": "League of Legends",
+            "year": "2011",
+            "genre": "MOBA",
+            "multiplayer": false,
+            "offline": false,
+            "crossplatform": "noPlatform"
+        }
+    ]
+}

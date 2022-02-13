@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Games Magazine</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="fid">ID:</label>
+        <input type="number" name="fid" id="fid" />
+        <label for="fgame">Nome do Game:</label>
+        <input type="text" name="fgame" id="fgame">
+        <label for="fyear">Ano:</label>
+        <input type="number" name="fyear" id="fyear">
+        <label for="fgenre">Gênero:</label>
+        <input type="text" name="fgenre" id="fgenre">
+        <div>
+            <label for="fmultiplayer">Tem Multiplayer?</label>
+            <label for="fmp__radio__1">Sim</label>
+            <input type="radio" name="multiplayerRadio" value="yesMultiplayer" id="fmp__radio__1">
+            <label for="fmp__radio__2">Não</label>
+            <input type="radio" name="multiplayerRadio" value="noMultiplayer" id="fmp__radio__2">
+        </div>
+        <div>
+            <label for="foffline">É Offline?</label>
+            <label for="foff__radio__1">Sim</label>
+            <input type="radio" name="offlineRadio" value="yesOffline" id="foff__radio__1">
+            <label for="foff__radio__2">Não</label>
+            <input type="radio" name="offlineRadio" value="noOffline" id="foff__radio__2">
+        </div>
+        <div>
+            <label for="fmultiplayer">É Crossplatform?</label>
+            <label for="fcp__radio__1">Sim</label>
+            <input type="radio" name="crossplatformRadio" value="yesPlatform" id="fcp__radio__1">
+            <label for="fcp__radio__2">Não</label>
+            <input type="radio" name="crossplatformRadio" value="noPlatform" id="fcp__radio__2">
+        </div>
+        <input type="button" value="Enviar dados" id='fbtn'>
+    </form>
+
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Nome do Game</th>
+            <th>Ano</th>
+            <th>Gênero</th>
+            <th>Multiplayer</th>
+            <th>Offline</th>
+            <th>Crossplatform</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</body>
+
+</html>

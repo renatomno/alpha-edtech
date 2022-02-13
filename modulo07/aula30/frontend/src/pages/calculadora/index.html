@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #324376;
+        }
+
+        .app__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .wrapper {
+            background-color: #586BA4;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .display {
+            width: 100%;
+            height: 70px;
+            background-color: #F5DD90;
+            margin-bottom: 20px;
+        }
+
+        .display__text {
+            font-size: 30px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            width: 70px;
+            height: 40px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 12px;
+            background-color: #F68E5F;
+            font-size: 30px;
+        }
+
+        .btn:hover {
+            background-color: #F76C5E;
+        }
+
+        .btn:active {
+            background-color: #D61B0A;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app__container">
+        <div class="wrapper">
+            <div class="row display">
+                <span class="display__text"></span>
+            </div>
+            <div class="row">
+                <button class="btn btn--number">7</button>
+                <button class="btn btn--number">8</button>
+                <button class="btn btn--number">9</button>
+                <button class="btn btn--operation">+</button>
+            </div>
+            <div class="row">
+                <button class="btn btn--number">4</button>
+                <button class="btn btn--number">5</button>
+                <button class="btn btn--number">6</button>
+                <button class="btn btn--operation">-</button>
+            </div>
+            <div class="row">
+                <button class="btn btn--number">1</button>
+                <button class="btn btn--number">2</button>
+                <button class="btn btn--number">3</button>
+                <button class="btn btn--operation">*</button>
+            </div>
+            <div class="row">
+                <button class="btn btn--number">0</button>
+                <button class="btn btn--number">.</button>
+                <button class="btn btn--equals">=</button>
+                <button class="btn btn--operation">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Função Imprimir conta no visor
+        function displayResult(result) {
+            const displayCalculator = document.querySelector(".display__text")
+            displayCalculator.textContent = result
+
+        }
+
+        //Botões de número, operação e igualdade
+        const btnNumber = document.querySelectorAll(".btn--number")
+        const btnOperation = document.querySelectorAll(".btn--operation")
+        const btnEquals = document.querySelector(".btn--equals")
+
+        //Variáveis de controle
+        let displayNumber = "" //Número mostrado no visor
+        let contOperator = 0 //Flag que indica se na conta já existe uma operação
+
+        //Aplicação dos event listeners nos botões numerais
+        for (let buttons of btnNumber) {
+            buttons.addEventListener("click", event => {
+                displayNumber += event.target.textContent
+                displayResult(displayNumber)
+            })
+        }
+
+        //Aplicação dos event listeners nos botões de operação
+        for (let buttons of btnOperation) {
+            buttons.addEventListener("click", event => {
+                displayNumber = displayNumber.replace(" + ", ` ${event.target.textContent} `)
+                displayNumber = displayNumber.replace(" - ", ` ${event.target.textContent} `)
+                displayNumber = displayNumber.replace(" * ", ` ${event.target.textContent} `)
+                displayNumber = displayNumber.replace(" / ", ` ${event.target.textContent} `)
+                if (contOperator == 0) {
+                    displayNumber += " " + event.target.textContent + " "
+                    contOperator++
+                }
+                displayResult(displayNumber)
+            })
+        }
+
+        //Obter resultado 
+        btnEquals.addEventListener("click", event => {
+            //Separação da string displayNumber
+            const arrayDisplayNumbers = displayNumber.split(" ")
+
+            //Criação da classe, set de valores e impressão do resultado
+            const operand1 = parseFloat(arrayDisplayNumbers[0])
+            const operation = arrayDisplayNumbers[1]
+            const operand2 = parseFloat(arrayDisplayNumbers[2])
+
+            async function api(operand1, operand2, operation) {
+                const req = await fetch("http://localhost:3030/resolucao", {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ operand1, operand2, operation }),
+                })
+
+                const result = await req.json()
+                displayResult(result)
+            }
+
+
+
+            api(operand1, operand2, operation)
+
+            //Resetar valores para mais um uso
+            displayNumber = ""
+            contOperator = 0
+        })
+    </script>
+</body>
+
+</html>
