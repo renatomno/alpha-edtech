@@ -4,6 +4,6 @@ módulo 2 => Front-end (HTML)
 
 módulo 3 => Front-end (CSS)
 
-módulo 7 => Javascript
+módulo 7 => JavaScript
 
 módulo 10 => jQuery e jQuery UI
