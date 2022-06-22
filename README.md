@@ -9,3 +9,5 @@ módulo 7 => JavaScript;
 módulo 10 => jQuery e jQuery UI.
 
 modulo 11 => React
+
+modulo 14 => Typescript
